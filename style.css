@@ -202,7 +202,7 @@ h2{
     border: solid #E6EAEE 2px;
     border-right: none;
     border-radius: 16px;
-    padding: 18px 24px;
+    padding:1rem;
 }
 
 #ticket-start img{
@@ -373,4 +373,53 @@ footer{
     background-size: cover, contain, auto; /* Különböző méretezési beállítások */
     background-position: center, left top, right bottom; /* Különböző pozicionálási beállítások */
     background-repeat: no-repeat, no-repeat, repeat; /* Különböző ismétlési beállítások */
+}
+
+@media (max-width: 90rem){
+    body{
+        overflow-x: hidden;
+        background-size: cover;
+        background-size: 100% auto;
+    }
+
+    #logo{
+        margin-left: 1rem;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    #kepek{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        width: auto;
+        margin-right: 3.3rem;
+    }
+
+    #cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #koponya{
+        display: none;
+    }
+
+    #pok{
+        z-index: -1;
+    }
+
+    #ticket{
+        height: auto;
+    }
 }
