@@ -376,10 +376,9 @@ footer{
 }
 
 @media (max-width: 90rem){
-    body{
+    html{
         overflow-x: hidden;
         background-size: cover;
-        background-size: 100% auto;
     }
 
     #logo{
