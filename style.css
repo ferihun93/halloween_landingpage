@@ -397,15 +397,21 @@ footer{
 #backtotopicon {
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: -1.1rem;
     z-index: 99;
     font-size: 18px;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 15px;
     border-radius: 4px;
-  }
+    opacity: 0.4;
+    width: 90px;
+    height: 90px;
+}
+
+#backtotopicon:hover{
+    opacity: 1;
+}
   
 
 @media (max-width: 90rem){
@@ -467,26 +473,12 @@ footer{
         margin-bottom: 0;
     }
 
-    #ticket-end #date{
-        margin-bottom: 0;
-        margin-top: 1rem;
-    }
-
-}
-
-@media (max-width: 1822px){
-    #pokhalo{
-        z-index: -1;
-    }
-
-    #ticket-end{
-        font-size: 0.9rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
     #ticket-date{
-        margin-bottom: 2rem;
-        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    #backtotopicon{
+        width: 70px;
+        height: 70px;
     }
 }
