@@ -116,7 +116,7 @@ button:hover{
 
 h1{
     font-family: "Jolly Lodger", system-ui;
-    font-size: 58px;
+    font-size: 4rem;
     font-weight: 400;
     text-align: center;
 }
@@ -142,7 +142,6 @@ h2{
     position: relative;
     margin-top: -40rem;
     text-align: center;
-    font-size: 58px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,6 +219,13 @@ h2{
     border-radius: 16px;
     padding: -1rem;
     font-size: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#ticket-date{
+    margin-bottom: 1.8rem;
+    margin-top: 0.5rem;
 }
 
 #location-container{
@@ -251,13 +257,23 @@ h2{
 }
 
 #party-list ul{
-    list-style: url('design_images/tick-square.svg');
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     width: 976px;
     position: relative;
+    list-style: none;
+}
+
+#party-list ul li::before{
+    content: url('design_images/tick-square.svg');
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1.1rem;
+    margin-right: 1rem;
 }
 
 #pokhalo{
@@ -368,6 +384,11 @@ h2{
     z-index: 0;
 }
 
+#party-details{
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
 footer{
     background-image: url('design_images/szurkebokor.svg'), url('design_images/bal2.svg'),url('design_images/kozep.svg'), url('design_images/jobb.svg');
     background-size: cover, contain, auto; /* Különböző méretezési beállítások */
@@ -376,7 +397,7 @@ footer{
 }
 
 @media (max-width: 90rem){
-    body{
+    html{
         overflow-x: hidden;
         background-size: cover;
         background-size: 100% auto;
@@ -421,5 +442,16 @@ footer{
 
     #ticket{
         height: auto;
+    }
+
+    #ticket-end{
+        font-size: 0.9rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    #ticket-date{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
     }
 }
