@@ -116,7 +116,7 @@ button:hover{
 
 h1{
     font-family: "Jolly Lodger", system-ui;
-    font-size: 4rem;
+    font-size: 3.630rem;
     font-weight: 400;
     text-align: center;
 }
@@ -201,12 +201,13 @@ h2{
     border: solid #E6EAEE 2px;
     border-right: none;
     border-radius: 16px;
-    padding:1rem;
+    padding:1rem 1.5rem;
 }
 
 #ticket-start img{
     width: 48px;
     height: 48px;
+    margin-top: -0.1rem;
 }
 
 
@@ -254,6 +255,7 @@ h2{
     justify-content: center;
     flex-wrap: wrap;
     color: white;
+    margin-top: 1.5rem;
 }
 
 #party-list ul{
@@ -307,6 +309,10 @@ h2{
     font-family: "Jolly Lodger", system-ui;
     font-size: 36px;
 }
+
+/* #location-icon{
+    margin-top: 0.5rem;
+} */
 
 .card-design{
     background-color: var(--design);
@@ -387,6 +393,7 @@ h2{
 #party-details{
     margin-left: 0.1rem;
     margin-right: 0.1rem;
+    margin-bottom: 3rem;
 }
 
 footer{
@@ -397,7 +404,7 @@ footer{
 #backtotopicon {
     position: fixed;
     bottom: 20px;
-    right: -1.1rem;
+    right: 8rem;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -480,5 +487,6 @@ footer{
     #backtotopicon{
         width: 70px;
         height: 70px;
+        margin-right: -35%;
     }
 }
